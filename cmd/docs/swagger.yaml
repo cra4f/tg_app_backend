@@ -1,0 +1,49 @@
+info:
+  contact: {}
+paths:
+  /personages:
+    get:
+      consumes:
+      - application/json
+      description: Получить список всех персонажей игры
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: get personages
+      tags:
+      - personages
+  /personages/add:
+    post:
+      consumes:
+      - application/json
+      description: Добавить персонажа
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: add personage
+      tags:
+      - personages
+  /personages/edit:
+    put:
+      consumes:
+      - application/json
+      description: Отредактировать персонажа
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: edit personage
+      tags:
+      - personages
+swagger: "2.0"
